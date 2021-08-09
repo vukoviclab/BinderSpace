@@ -9,7 +9,7 @@ setup(
     author='Vukovic Lab (Payam Kelich)',
     author_email='lvukovic@utep.edu',  # Type in your E-Mail
     url='https://github.com/vukoviclab/BinderSpace',  # Provide either the link to your github or to your website
-    download_url='https://github.com/vukoviclab/BinderSpace/archive/refs/tags/0.1.tar.gz',  # I explain this later on
+    download_url='https://github.com/vukoviclab/BinderSpace/archive/refs/tags/0.15.tar.gz',
     keywords=['DNA', 'sequence', 'pca', 't-sne', 'peptide'],  # Keywords that define your package best
     install_requires=[
         'scikit-learn',
