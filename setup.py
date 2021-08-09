@@ -3,7 +3,7 @@ from distutils.core import setup
 setup(
     name='binderspace',
     packages=['binderspace'],
-    version='0.1',
+    version='0.15',
     license='mit',
     description='a library for finding the space for binding sequences',
     author='Vukovic Lab (Payam Kelich)',
