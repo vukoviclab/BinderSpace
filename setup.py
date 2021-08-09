@@ -6,8 +6,8 @@ setup(
     version='0.1',
     license='mit',
     description='a library for finding the space for binding sequences',
-    author='Payam Kelich',
-    author_email='payam.kelich68@gmail.com',  # Type in your E-Mail
+    author='Vukovic Lab (Payam Kelich)',
+    author_email='lvukovic@utep.edu',  # Type in your E-Mail
     url='https://github.com/vukoviclab/BinderSpace',  # Provide either the link to your github or to your website
     download_url='https://github.com/vukoviclab/BinderSpace/archive/refs/tags/0.1.tar.gz',  # I explain this later on
     keywords=['DNA', 'sequence', 'pca', 't-sne', 'peptide'],  # Keywords that define your package best
