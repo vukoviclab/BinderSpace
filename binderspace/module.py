@@ -26,6 +26,18 @@ from sklearn.metrics import confusion_matrix, f1_score, precision_score, recall_
 
 
 def amino_used(df):
+    """
+    This is a function named "amino_used" that takes a DataFrame as an input, and it does the following:
+
+    1-Initializes an empty dictionary "amino_dict" and an empty list "amino_appear"
+    2-Creates a list of all possible amino acids "amino_list"
+    3-Iterates over "amino_list" and count the number of each amino acid in a 'Sequence' column of the input DataFrame
+     and store it in the "amino_dict"
+    4-Iterate over the key-value pairs in the "amino_dict" and appends keys that have non-zero values to "amino_appear"
+     list
+    5-Sorting the "amino_appear" list and return it.
+
+    """
     amino_dict = {}
     amino_appear = []
     amino_list = list('ACDEFGHIKLMNPQRSTVWY')
