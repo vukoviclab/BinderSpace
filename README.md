@@ -1,21 +1,4 @@
-```python
-from google.colab import drive
-drive.mount('/content/drive/')
-```
 
-    Drive already mounted at /content/drive/; to attempt to forcibly remount, call drive.mount("/content/drive/", force_remount=True).
-
-
-
-```python
-
-```
-
-
-```python
-# After executing the cell above, Drive
-# files will be present in "/content/drive/My Drive".
-!ls "/content/drive/MyDrive/tutorial"
 ```
 
     tutorial
