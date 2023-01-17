@@ -121,7 +121,7 @@ bases_list = ['A', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'K', 'L', 'M', 'N', 'P', '
 
 **Output:**
 
-> ![picture](./data/tutorial_pic.jpg)
+> ![picture](https://github.com/vukoviclab/BinderSpace/blob/main/data/tutorial_pic1.jpg)
 
 
 
