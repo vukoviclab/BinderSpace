@@ -121,7 +121,7 @@ bases_list = ['A', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'K', 'L', 'M', 'N', 'P', '
 
 **Output:**
 
-> ![picture](https://drive.google.com/uc?id=1NTJWKAbM4UbWfiKNFomPj37a6Bv_ROZY)
+> ![picture](./data/tutorial_pic.jpg)
 
 
 
