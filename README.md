@@ -1,6 +1,3 @@
-    tutorial
-
-
 # <center> **BinderSpace Tutorial**
 
 Data information:
