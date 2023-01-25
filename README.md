@@ -18,12 +18,12 @@ The input data is peptide sequence data that bind to Bcl-2 family of proteins, t
 
 ## 1. Installing
 
-> Downloading the motifSearch.py, VisualizeMotif.ipynb and put it in the same folder with your
+> Downloading the motif_search.py, VisualizeMotif.ipynb and put it in the same folder with your
 data.
 
 
 
-## 2. Run motifSearch.py
+## 2. Run motif_search.py
 
 1.   Prepare input file:
 #####The input file is a CSV file contains DNA or peptide sequences. The sequences column header should be “Sequence”. Here we use 22_nt peptide sequences (3480 rows) from Z-keating dataset, and we also get 1470 negative sequences from peptide that bind to other proteins (pos_seqs.csv, neg_seqs.csv). The sequences should have same length and the sequences should not contain letters beyond 22 amino acids or 4 DNA bases.
@@ -76,7 +76,7 @@ GRTEAQVVQELVRIGDEYQAYY
 2.   Run motif search:
 #####Parameter setting: no gap, motif minimal length is 8, minmal frequency is 0.5% * total number of positive sequences, use 20 processors 
 #####command line:
-python MotifSearch.py -i pos_seqs.csv -n neg_seqs.csv -o keating -m 8 -f 0.005 -g 2 -a 2 
+python motif_search.py -i pos_seqs.csv -n neg_seqs.csv -o keating -m 8 -f 0.005 -g 2 -a 2 
 
 
 
