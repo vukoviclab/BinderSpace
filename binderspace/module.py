@@ -22,9 +22,6 @@ from sklearn.preprocessing import LabelEncoder, OneHotEncoder
 from sklearn.metrics import confusion_matrix, f1_score, precision_score, recall_score, accuracy_score, auc, roc_curve
 
 
-# TODO: convert this codes to class base code and find the relations between the functions
-
-
 def amino_used(df):
     """
     This is a function named "amino_used" that takes a DataFrame as an input, and it does the following:
