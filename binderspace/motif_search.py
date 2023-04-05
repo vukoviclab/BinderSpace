@@ -189,7 +189,7 @@ def generate_df(re_dict):
                     [i, len(re_dict[i][0]), len(re_dict[i][1]), pos_perc, neg_perc, pos_perc - neg_perc, re_dict[i][0], re_dict[i][1]])
         df = pd.DataFrame(data, columns=['motifs', 'positive_occurrence', 'negative_occurrence ', 'pos_percentage (%)',
                                          'neg_percentage (%)', 'difference (%)', 'index_pos', 'index_neg'])
-        df2 = df.sort_values('difference', ascending=False)
+        df2 = df.sort_values('difference (%)', ascending=False)
 
     return df2
 
