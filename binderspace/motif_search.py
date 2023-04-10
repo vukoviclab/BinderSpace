@@ -179,17 +179,23 @@ def generate_df(re_dict):
             data.append([i, len(re_dict[i]), pos_perc, re_dict[i]])
             df = pd.DataFrame(data, columns=['motifs', 'positive_occurrence', 'pos_percentage (%)', 'index'])
             df2 = df.sort_values('pos_percentage', ascending=False)
+            df2.drop(['index'], axis=1, inplace=True)
 
     else:
         for i in re_dict.keys():
             pos_perc = (len(re_dict[i][0]) / len(posset)) * 100
             neg_perc = (len(re_dict[i][1]) / len(negset)) * 100
+            data_chi = np.array([[len(re_dict[i][0]),len(re_dict[i][1])],
+                                 [len(posset)-len(re_dict[i][0]),len(negset)-len(re_dict[i][1])]])
+            chi2, p_value, degrees_of_freedom, expected_values = chi2_contingency(data_chi)
+            
             if pos_perc > neg_perc:
                 data.append(
-                    [i, len(re_dict[i][0]), len(re_dict[i][1]), pos_perc, neg_perc, pos_perc - neg_perc, re_dict[i][0], re_dict[i][1]])
+                    [i, len(re_dict[i][0]), len(re_dict[i][1]), pos_perc, neg_perc, pos_perc - neg_perc, re_dict[i][0], re_dict[i][1],round(chi2, 2),p_value])
         df = pd.DataFrame(data, columns=['motifs', 'positive_occurrence', 'negative_occurrence ', 'pos_percentage (%)',
-                                         'neg_percentage (%)', 'difference (%)', 'index_pos', 'index_neg'])
+                                         'neg_percentage (%)', 'difference (%)', 'index_pos', 'index_neg','chi2','p-value'])
         df2 = df.sort_values('difference (%)', ascending=False)
+        df2.drop(['index_pos','index_neg'], axis=1, inplace=True)
 
     return df2
 
